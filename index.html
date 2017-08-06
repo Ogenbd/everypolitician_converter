@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='./dist/main.css' rel="stylesheet" type="text/css">
+    <title>JSON to CSV</title>
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Everypolitician JSON converter</h1>
+                <h2 class="subtitle">Just hit the start button</h2>
+            </div>
+        </div>
+    </section>
+    <section class="body">
+        <button class="test button is-success">START</button>
+        <label class="label">Country Data</label>
+        <div class="align">
+            <progress class="progress is-primary fetch" value="0" max="0"></progress>
+            <p><span class="fetch-curr">0</span> / <span class="fetch-max">0</span> fetched</p>
+        </div>
+        <div class="align">
+            <!--<progress class="progress is-primary convert" value="0" max="0"></progress>-->
+            <p class="info"><span class="convert-max">0</span>  Items converted</p>
+        </div>
+        <button class="result button is-primary">Save CSV file</button>
+    </section>
+    <script src="dist/main.js"></script>
+</body>
+
+</html>
